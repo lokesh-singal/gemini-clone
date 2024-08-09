@@ -47,7 +47,7 @@
 }
 
 .main .card {
-    height: 200px;
+    min-height: 200px;
     padding: 15px;
     background-color: #f0f4f9;
     border-radius: 10px;
@@ -182,9 +182,21 @@
 }
 
 @media (max-width:600px) {
+    .main .greet {
+        font-size: 45px;
+    }
+
+    .main .cards {
+        margin-bottom: 10px;
+    }
+
+    .main .card {
+        min-height: 160px;
+    }
+
     .main-bottom input {
         flex: none;
-        width: 150px;
+        width: 250px;
     }
 
     .main-bottom img {

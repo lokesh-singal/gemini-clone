@@ -42,10 +42,11 @@ const ContextProvider = ({ children }) => {
       if (i == 0 || i % 2 != 1) {
         newResponse += responseArray[i];
       } else {
-        newResponse += "<b>" + responseArray[i] + "</b>";
+        newResponse += "<br>" + "<b>" + responseArray[i] + "</b>";
       }
     }
-    let newResponse2 = newResponse.split("*").join("</br>");
+    let newResponse2 = newResponse.split("*").join("<br>");
+    console.log(newResponse2);
     let newResponseArray = newResponse2.split(" ");
     for (let i = 0; i < newResponseArray.length; i++) {
       const nextWord = newResponseArray[i];
